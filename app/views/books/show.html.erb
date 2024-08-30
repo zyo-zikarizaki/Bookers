@@ -1,2 +1,24 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<!DOCTYPE html>
+
+<html>
+<head>
+  <%= stylesheet_link_tag 'books', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  
+  <% if flash[:notice] %>
+  <div class="flash flash-notice">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+  
+<h2>title</h2>
+<p><%= @book.title %></p>
+
+<h2>body</h2>
+<p><%= @book.body %></p>
+
+<a href="/edit">edit</a>
+<a href="/books">back</a>
+</body>
+</html>
