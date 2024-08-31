@@ -27,7 +27,7 @@
         <td>
           <%= link_to 'show', book_path(book.id) %>
           <%= link_to "edit", edit_book_path(book.id) %>
-          <%= link_to "destroy", book_path(book.id), method: :delete, data: { confirm: "本当に削除しますか？" } %>
+          <%= link_to "Destroy", book_path(book.id), method: :delete, data: { confirm: "本当に削除しますか？" } %>
         </td>
       </tr>
     <% end %>
@@ -54,7 +54,7 @@
   <h4>body</h4>
   <%= f.text_area :body %>
 	
-  <%= f.submit 'create' %>
+  <%= f.submit 'Create Book' %>
 <% end %>
 </body>
 </html>

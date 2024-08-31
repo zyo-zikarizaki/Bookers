@@ -18,7 +18,7 @@
 <h2>body</h2>
 <p><%= @book.body %></p>
 
-<a href="/edit">edit</a>
+<%= link_to "edit", edit_book_path(@book.id) %>
 <a href="/books">back</a>
 </body>
 </html>
